@@ -54,6 +54,57 @@
 <body class="font-manrope">
     <header class="max-w-6xl mx-auto ">
 
+        <!-- navbar section starts -->
+
+        <nav class="mb-5">
+
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a> <span class="text-[#FF4240] font-bold ">Home</span></a></li>                     
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">Hockey<span class="text-red-400">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a> <span class="text-[#FF4240] font-bold ">Home</span></a></li>                     
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+
+                    <div class="space-x-4 flex items-center">
+                        <span class="hidden lg:inline"><i class="fa-solid fa-magnifying-glass text-2xl"></i></span>
+
+                        <a class="btn bg-[#FF4240] font-bold text-sm lg:text-xl text-white hover:bg-green-300" >Get Ticket</a>
+                    </div>
+
+                   
+                </div>
+            </div>
+
+
+
+        </nav>
+
         <!-- header banner slide section -->
 
         <div class="carousel w-full">
@@ -787,51 +838,56 @@
 
                     <!-- For Name and Email -->
 
-                   <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex flex-col lg:flex-row gap-4">
 
-                    <div class="space-y-4 flex-1">
-                        <label for="name" class="text-xl font-bold">Your name</label> <br>
-                        <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none " type="text" placeholder=" Enter Your Full Name">
+                        <div class="space-y-4 flex-1">
+                            <label for="name" class="text-xl font-bold">Your name</label> <br>
+                            <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none " type="text"
+                                placeholder=" Enter Your Full Name">
+                        </div>
+
+                        <div class="space-y-4 flex-1">
+                            <label for="name" class="text-xl font-bold">Your Email</label> <br>
+                            <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none" type="text"
+                                placeholder=" Enter Your Email">
+                        </div>
+
                     </div>
 
-                    <div class="space-y-4 flex-1">
-                        <label for="name" class="text-xl font-bold">Your Email</label> <br>
-                        <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none" type="text" placeholder=" Enter Your Email">
-                    </div>
-
-                   </div>
-                   
                     <!-- For Subject and Number -->
 
-                   <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex flex-col lg:flex-row gap-4">
 
-                    <div class="space-y-4 flex-1">
-                        <label for="name" class="text-xl font-bold">Subject</label> <br>
-                        <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none" type="text" placeholder=" Enter Your Subject">
+                        <div class="space-y-4 flex-1">
+                            <label for="name" class="text-xl font-bold">Subject</label> <br>
+                            <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none" type="text"
+                                placeholder=" Enter Your Subject">
+                        </div>
+
+                        <div class="space-y-4 flex-1">
+                            <label for="name" class="text-xl font-bold">Your Number</label> <br>
+                            <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none" type="text"
+                                placeholder=" Enter Your Number">
+                        </div>
+
                     </div>
 
-                    <div class="space-y-4 flex-1">
-                        <label for="name" class="text-xl font-bold">Your Number</label> <br>
-                        <input class="input w-full bg-[rgba(19,19,24,0.03)] border-none" type="text" placeholder=" Enter Your Number">
+                    <!-- For Comments -->
+
+                    <div class="space-y-4">
+                        <label class="text-xl font-bold" for="">Message :</label> <br>
+                        <textarea class="w-full bg-[#13131808] rounded-lg outline-none p-5"
+                            placeholder="Write Your Message" name="" id="" cols="30" rows="10"></textarea>
                     </div>
 
-                   </div>
+                    <!-- For Button -->
 
-                   <!-- For Comments -->
-
-                   <div class="space-y-4">
-                    <label class="text-xl font-bold" for="">Message :</label> <br>
-                    <textarea class="w-full bg-[#13131808] rounded-lg outline-none p-5" placeholder="Write Your Message" name="" id="" cols="30" rows="10"></textarea>
-                   </div>
-
-                   <!-- For Button -->
-
-                   <div>
-                    <button class=" btn w-full bg-[#FF4240] text-white text-xl">Send Message</button>
-                   </div>
+                    <div>
+                        <button class=" btn w-full bg-[#FF4240] text-white text-xl">Send Message</button>
+                    </div>
 
 
-                </form>            
+                </form>
 
 
 
@@ -851,7 +907,7 @@
                     <span><i class="fa-brands fa-github"></i></span>
 
 
-                    
+
                 </div>
             </div>
 
